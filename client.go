@@ -39,9 +39,7 @@ var httpClient = http.Client{
 
 func main() {
 	for {
-		if true {
-			resp, err := httpClient.Get("http://localhost:8000/idle")
-			log.Print(resp, err)
-		}
+		resp, err := httpClient.Get("http://localhost:8000/idle")
+		log.Print(resp, err)
 	}
 }
